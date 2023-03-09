@@ -1,2 +1,2 @@
 #!/bin/bash
-./100-lets_move && ls -la && ls -la /tmp/u
+ls | grep '^[A-Z]' | xargs -I {} sh -c 'mv {} /tmp/u'
